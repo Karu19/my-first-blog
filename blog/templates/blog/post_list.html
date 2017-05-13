@@ -1,22 +1,24 @@
 <html>
     <head>
-      <title> Karu19 blog</title>
-  </head>
-  <body>
-    <div>
-      <h1><a href="">Karu19 Blog</a></h1>
-    </div>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+          </div>
 
-           <div>
-               <p>published: 14.06.2014, 12:14</p>
-               <h2><a href="">Mi primer post!</a></h2>
-               <p>Holaaaa!!!</p>
-           </div>
+{% for post in posts %}
+              <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My first post</a></h2>
+            <p>Holisss!</p>
+          </div>
 
-           <div>
-               <p>published: 14.06.2014, 12:14</p>
-               <h2><a href="">Mi segundo post! ^_^</a></h2>
-               <p>Muchas gracias "profe" :D</p>
-             </div>
-  </body>
+          <div>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">My second post</a></h2>
+            <p>Muchas Gracias!</p>
+        </div>
+{% endfor %}
+    </body>
 </html>
